@@ -11,7 +11,7 @@
 Our improvements are based on the competition's [Baseline code](https://github.com/lpcvai/25LPCVC_Track3_Sample_Solution/tree/main), focusing on both speed and accuracy:
 
 1. **Accuracy Improvements:**
-   - Replace the relative depth estimation model weight in the Baseline with Depth Anything V2's absolute depth estimation model weight trained on the Hypersim dataset.
+   - Replace the relative depth estimation model weight in the Baseline with Depth Anything V2's metric depth estimation model weight trained on the Hypersim dataset.
    - Eliminate the normalization operation used for model postprocessing from the original Baseline.
    - Perform depth estimation on both the original input image and its horizontally flipped version, then average the results as the final output.
 
@@ -35,14 +35,14 @@ Our improvements are based on the competition's [Baseline code](https://github.c
 
 ## 3. LICENSE
 
-This project is licensed under the Apache 2.0 License
+This project is licensed under the Apache 2.0 License.
 
 ## 4. Citation
 
-```markdown
+```bibtex
 @article{depth_anything_v2,
   title={Depth Anything V2},
-  author={Yang, Lihe and Kang, Bingyi and Huang, Zilong and Zhao, Zhen and Xu, Xiaogang and 	Feng, Jiashi and Zhao, Hengshuang},
+  author={Yang, Lihe and Kang, Bingyi and Huang, Zilong and Zhao, Zhen and Xu, Xiaogang and Feng, Jiashi and Zhao, Hengshuang},
   journal={arXiv:2406.09414},
   year={2024}
 }
