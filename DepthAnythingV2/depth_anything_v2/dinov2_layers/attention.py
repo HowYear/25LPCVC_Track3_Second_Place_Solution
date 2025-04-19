@@ -25,6 +25,7 @@ except ImportError:
     logger.warning("xFormers not available")
     XFORMERS_AVAILABLE = False
 
+XFORMERS_AVAILABLE = False
 class FixedNormalization1D(nn.Module):
     def __init__(self, channels):
         super(FixedNormalization1D, self).__init__()
