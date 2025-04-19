@@ -9,7 +9,7 @@ import os
 from DepthAnythingV2.depth_anything_v2.dinov2_layers.replace_attention import replace_attention_with_v2
 from DepthAnythingV2.depth_anything_v2.dpt import DepthAnythingV2
 
-model_weight = '/media/xhn/sda2/xiehaonian/code/Distill-Any-Depth-main/depth_anything_v2_metric_hypersim_vits.pth'
+model_weight = './depth_anything_v2_metric_hypersim_vits.pth'
 
 model_configs = {
     'vits': {'encoder': 'vits', 'features': 64, 'out_channels': [48, 96, 192, 384]},
