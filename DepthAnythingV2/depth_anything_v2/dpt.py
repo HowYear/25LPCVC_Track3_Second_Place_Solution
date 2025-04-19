@@ -205,9 +205,8 @@ class DepthAnythingV2(nn.Module):
         self.depth_head = DPTHead(self.pretrained.embed_dim, features, use_bn, out_channels=out_channels, use_clstoken=use_clstoken)
     
     def forward(self, x):
-        # resize x (WidthxHeight=640x480) to Depth-Anythig-V2's original input resolution (518x518). 
 
-        x = F.interpolate(x, (518, 518), mode="bilinear", align_corners=True)
+        x = F.interpolate(x, (350, 350), mode="bilinear", align_corners=True)
         # input pre-prossing using the fixed normalization layer
 
         x = self.normalization(x)
